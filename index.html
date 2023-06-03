@@ -4,28 +4,82 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/svg-inject.min.js"></script>
   <title>Spider-mam: Miles Morales</title>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="nav-menu">
-        <div class="logo"></div>
+        <div class="logo">
+          <img src="assets/images/logo-spiderman.svg" 
+               alt="Logo Spider-mam"
+               onload="SVGInject(this)"
+          >
+        </div>
         <ul class="nav-list">
-          <li><a href="http://" class="nav-link"></a>Home</li>
-          <li><a href="http://" class="nav-link"></a>Story</li>
-          <li><a href="http://" class="nav-link"></a>Wallpapers</li>
-          <li><a href="http://" class="nav-link"></a>#BeYourself</li>
+          <li><a href="#" class="nav-link"></a>Home</li>
+          <li><a href="#" class="nav-link"></a>Story</li>
+          <li><a href="#" class="nav-link"></a>Wallpapers</li>
+          <li><a href="#" class="nav-link"></a>#BeYourself</li>
         </ul>
       </div>
-      <div class="nav-social"></div>
+      <div class="nav-social">
+        <img src="assets/images/icon-facebook.svg" 
+               alt="Facebook"
+               onload="SVGInject(this)"
+          >
+          <img src="assets/images/icon-instagram.svg" 
+               alt="Instagram"
+               onload="SVGInject(this)"
+          >
+          <img src="assets/images/icon-youtube.svg" 
+               alt="YouTube"
+               onload="SVGInject(this)"
+          >
+          <img src="assets/images/icon-twitter.svg" 
+               alt="Twitter"
+               onload="SVGInject(this)"
+          >
+      </div>
     </nav>
   </header>
 
   <section class="container">
-    <div class="container-item-1"></div>
-    <div class="container-item-2"></div>
+    <div class="container-item-1">
+      <div>
+        <img 
+          src="assets/images/spiderman-text.png" 
+          alt="Imagem com a descrição: Spider-man Miles Morales"
+          onload="SVGInject(this)"
+        >
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta qui nobis sapiente modi accusantium similique quia, aperiam distinctio, blanditiis provident deserunt, quasi laboriosam ratione! Adipisci, ut! Soluta doloribus non provident.
+      </p>
+      <div>
+        <a href="" class="btn-primary">Pre-order now</a>
+        <a href="" class="btn-secondary">watch the tease</a>
+      </div>
+      <div>
+        <img src="assets/images/ps.svg" 
+          alt="Logo Playstation"
+          onload="SVGInject(this)"
+        >
+        <img src="assets/images/marvel.svg" 
+          alt="Logo Marvel"
+          onload="SVGInject(this)"
+        >
+      </div>
+    </div>
+    <div class="container-item-2">
+      <img 
+        src="assets/images/spider-man.png" 
+        alt="Imagem Spider-man Miles Morales com punho fechado saindo raios de energia"
+        onload="SVGInject(this)"
+      >
+    </div>
   </section>
 </body>
 </html>
