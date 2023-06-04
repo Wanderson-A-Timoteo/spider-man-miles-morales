@@ -39,14 +39,14 @@ div {
   max-width: 1440px;
   margin: 0 auto;
   padding: 36px 16px;
-  overflow: hidden;
+  overflow: none;
   height: 85vh;
 }
 @media screen and (max-width: 960px) {
   .container {
     flex-direction: column;
     height: auto;
-    overflow: none;
+    overflow: hidden;
   }
 }
 
@@ -155,6 +155,43 @@ div {
   width: 102%;
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-video::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: linear-gradient(101.47deg, #0A0C10 26.38%, rgba(10, 12, 16, 0.8) 50.07%, #0A0C10 73.17%);
+}
+
+.bg-loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(225deg, #EA1D22 0%, #B31317 100%);
+  overflow: hidden;
+}
+
 header {
   width: 100%;
   padding-top: 16px;
@@ -254,6 +291,27 @@ header {
   }
 }
 
+.logo-spiderman {
+  fill: transparent;
+  animation: logo-spiderman 6s ease infinite alternate;
+}
+
+@keyframes logo-spiderman {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    stroke-dasharray: 100 0;
+    fill: transparent;
+  }
+  60%, 100% {
+    stroke-width: 0.3;
+    fill: #EDF1F7;
+  }
+}
 .m-1 {
   margin: 8px;
 }
