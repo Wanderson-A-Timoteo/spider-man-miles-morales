@@ -10,9 +10,39 @@
   height: 85vh;
 
   @include responsive() {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
     overflow: hidden;
+  }
+
+  @include responsive450() {
+    .item-3 {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .btn-primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+      }
+
+      .btn-secondary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;     
+      }      
+    }
+
+    .item-4 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
   }
 }
 

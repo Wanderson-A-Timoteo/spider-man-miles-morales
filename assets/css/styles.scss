@@ -11,6 +11,12 @@
   }
 }
 
+@mixin responsive450() {
+  @media screen and (max-width: 450px){
+    @content;
+  }
+}
+
 @import 'partials/colors';
 
 body {
