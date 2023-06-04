@@ -40,6 +40,14 @@ div {
   margin: 0 auto;
   padding: 36px 16px;
   overflow: hidden;
+  height: 85vh;
+}
+@media screen and (max-width: 960px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    overflow: none;
+  }
 }
 
 .container-item-1 {
@@ -64,6 +72,12 @@ div {
 .spiderman {
   width: 150%;
   transform: translate3d(-170px, 0, 0);
+}
+@media screen and (max-width: 960px) {
+  .spiderman {
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .btn-primary {
@@ -168,6 +182,11 @@ header {
 .nav-list li {
   margin-left: 24px;
 }
+@media screen and (max-width: 960px) {
+  .nav-list {
+    display: none;
+  }
+}
 
 .logo {
   max-width: 88px;
@@ -201,6 +220,19 @@ header {
   height: 40px;
 }
 
+.bx {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .bx {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: #EDF1F7;
+    border-radius: 8px;
+  }
+}
+
 .nav-social {
   display: flex;
 }
@@ -215,6 +247,11 @@ header {
 .nav-social svg:hover path, .nav-social svg:hover circle {
   fill: #F02A2F;
   transform: translate3d(0, -3px, 0);
+}
+@media screen and (max-width: 960px) {
+  .nav-social {
+    display: none;
+  }
 }
 
 .m-1 {
