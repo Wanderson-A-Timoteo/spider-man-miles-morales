@@ -16,8 +16,16 @@
   max-width: 576px;
 }
 
-.container-item-2 {
+.flex {
+  display: flex;
+}
 
+.w-auto {
+  width: auto;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .spiderman {
@@ -115,4 +123,8 @@
       width: 102%;
     }
   }
+}
+
+.container-item-2 {
+
 }
